@@ -1,0 +1,204 @@
+:root {
+    --gray-1: #ccc;
+    --gray-900: #111827;
+    --gray-800: #1f2937;
+  }
+  
+  /* ?ttip */
+  .ch-sonic-improver-ttip {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    height: 23px;
+    transition: opacity 100ms ease, visibility 100ms ease;
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.09), 0 4px 8px rgba(0, 0, 0, 0.09);
+    font-size: 14px;
+    line-height: 1.3;
+    background: #ccc;
+    z-index: 999999999999;
+    border-radius: 20px;
+    background: white;
+    color: #5e3aed;
+  }
+  .ch-sonic-improver-ttip.ch-hide {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .ch-sonic-improver-ttip-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 23px;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    transition: all 100ms ease;
+    border: none;
+    background: transparent;
+    cursor: pointer !important;
+  }
+  .ch-sonic-improver-ttip-btn:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .ch-sonic-improver-ttip-btn:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .ch-sonic-improver-ttip-btn:hover {
+    background: var(--gray-1);
+  }
+  
+  .ch-sonic-improver-ttip:hover .ch-sonic-improver-ttip-divider {
+    height: 100%;
+  }
+  
+  .ch-sonic-improver-ttip-btn svg {
+    width: 100%;
+    height: 100%;
+    color: #5e3aed;
+  }
+  .ch-sonic-improver-ttip-btn:last-child svg {
+    fill: #5e3aed;
+  }
+  .ch-sonic-improver-ttip-divider {
+    height: 70%;
+    width: 1px;
+    background: var(--gray-1);
+  }
+  
+  html.chromane-sonic-dark .ch-sonic-improver-ttip {
+    background: var(--gray-900);
+    box-shadow: #a5b4fc 0px 0px 2px;
+  }
+  html.chromane-sonic-dark .ch-sonic-improver-ttip-btn:hover {
+    background: var(--gray-800);
+  }
+  
+  html.chromane-sonic-dark .ch-sonic-improver-ttip-divider {
+    background: var(--gray-800);
+  }
+  
+  .ch-sonic-tooltip.improver-ttipttip {
+    position: fixed;
+  }
+  
+  /* !Improver iframe */
+  #ch-sonic-improver-iframe {
+    width: 400px;
+    min-height: 120px;
+  
+    transform: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    border: 1px solid rgb(229 231 235);
+    border-radius: 6px;
+    box-shadow: none;
+    overflow: hidden;
+    cursor: grab;
+  }
+  
+  #ch-sonic-improver-iframe.chromane-hide {
+    transform: none;
+  }
+  
+  #ch-sonic-improver-iframe iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  #ch-sonic-improver-iframe .ch-sonic-iframe-drag {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    z-index: 3;
+    cursor: grab;
+    pointer-events: none;
+  }
+  
+  #ch-sonic-improver-iframe::after,
+  #ch-sonic-improver-iframe::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: transparent;
+    z-index: 3;
+    cursor: grab;
+  }
+  #ch-sonic-improver-iframe::after {
+    left: 0px;
+  }
+  #ch-sonic-improver-iframe::before {
+    right: 0px;
+    height: 35px;
+    width: 10px;
+  }
+  
+  #ch-sonic-improver-iframe .ch-sonic-iframe-drag::before,
+  #ch-sonic-improver-iframe .ch-sonic-iframe-drag::after {
+    content: "";
+    display: block;
+    background: transparent;
+    position: absolute;
+    cursor: grab;
+    pointer-events: all;
+  }
+  
+  #ch-sonic-improver-iframe .ch-sonic-iframe-drag::before {
+    left: 126px;
+    top: 0px;
+    height: 35px;
+    width: 35%;
+  }
+  
+  #ch-sonic-improver-iframe .ch-sonic-iframe-drag::after {
+    bottom: 0px;
+    height: 8px;
+    width: 100%;
+  }
+  
+  .ch-sonic-iframe-dragoverlay {
+    position: absolute;
+    inset: 0px;
+    background: transparent;
+    z-index: 9999999;
+  }
+  
+  #ch-sonic-improver-iframe[data-drag="true"]::after {
+    width: 100%;
+  }
+  
+  .ch-sonic-improver-highlighter {
+    background: transparent;
+    position: fixed;
+    color: transparent;
+    pointer-events: none;
+    z-index: 99999999999999999;
+  }
+  .ch-sonic-improver-highlighter-block {
+    background: rgb(99, 102, 241, 0.3);
+    position: absolute;
+    z-index: 2;
+  }
+  .ch-sonic-improver-highlighter-block.contentedit {
+    background: rgb(99, 102, 241, 0.3);
+    position: fixed !important;
+    z-index: 999999999999999999999;
+  }
+  
+  html.chromane-sonic-dark #ch-sonic-improver-iframe {
+    background: rgb(17 24 39);
+    border: 1px solid #34383f;
+    /* border: 1px solid rgb(112, 92, 246); */
+  }
+  
