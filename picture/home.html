@@ -7,7 +7,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="/DEVFINAL/Afterlogin/main.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
@@ -24,21 +24,21 @@
         </div>
         <div class="header-content">
             <div class="logo">
-                <img src="/DEVFINAL/picture/logo-sa.png" alt="Public Health"/>
+                <img src="/picture/logo-sa.png" alt="Public Health"/>
                 <h4>Public Health <br> งานอนามัยและสุขภาพ</h4> 
             </div>
             <div>
                 <div class="unilogo">
-                    <img src="/DEVFINAL/picture/newunilogo.png" alt="BSRU Logo"/>
+                    <img src="picture/newunilogo.png" alt="BSRU Logo"/>
                 </div>
             </div>
-           <div class="language-switch">
-                <a href="#" onclick="setLanguage('th')">
-                    <img src="/DEVFINAL/picture/thai.jpg" alt="TH Flag" width="20" height="15"> TH
+            <div class="language-switch">
+                <a href="#">
+                    <img src="thai.jpg" alt="TH Flag" width="20" height="15"> TH
                 </a> 
                 | 
-                <a href="#" onclick="setLanguage('en')">
-                    <img src="/DEVFINAL/picture/uk.png" alt="EN Flag" width="20" height="15"> EN
+                <a href="#">
+                    <img src="uk.png" alt="EN Flag" width="20" height="15"> EN
                 </a>
             </div>
         </div>
@@ -52,6 +52,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+                            <a class="nav-link" href="#">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -59,41 +62,20 @@
                                 บริการ
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/services.html">บริการสุขภาพ</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/healthcheck.html">บริการตรวจสุขภาพโดยแพทย์</a></li>
+                                <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
+                                <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                                <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                                <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">คลังความรู้</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ระบบยืมกระเป๋าพยาบาล</a>
-                        </li>
-                        <li class="nav-item dropdown"></li>
-                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                ดาวน์โหลดเอกสาร
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="#">คู่มือการใช้งาน</a></li>
-                            </ul>
-                        </li>
                     </ul>
                     <form class="d-flex search-container">
                         <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-secondary" type="submit">Search</button>
-                        <div class="user-icons dropdown">
-                            <i class="fas fa-bell"></i>
-                            <i class="fas fa-user dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                            
-                            <!-- Dropdown Menu -->
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">การตั้งค่า</a></li>
-                                
-                                <li><a class="dropdown-item" href="/DEVFINAL/login/logout.php">ออกจากระบบ</a></li>
-                            </ul>
-                        </div>
+                        <a href="login.php" class="login-link">เข้าสู่ระบบ</a>
                     </form>
                 </div>
             </div>
@@ -111,13 +93,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/DEVFINAL/picture/bsru.jpg" class="d-block w-100" alt="Slide 1">
+                    <img src="bsru.jpg" class="d-block w-100" alt="Slide 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="/DEVFINAL/picture/bsru1.jpg" class="d-block w-100" alt="Slide 2">
+                    <img src="bsru1.jpg" class="d-block w-100" alt="Slide 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="/DEVFINAL/picture/bsru3.jpg" class="d-block w-100" alt="Slide 3">
+                    <img src="bsru3.jpg" class="d-block w-100" alt="Slide 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -138,7 +120,7 @@
         <div class="news-container row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="/DEVFINAL/picture/bsru.jpg" class="card-img-top" alt="...">
+                    <img src="bsru.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">หัวข้อกิจกรรม</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -150,7 +132,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/DEVFINAL/picture/bsru1.jpg" class="card-img-top" alt="...">
+                    <img src="bsru1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">หัวข้อกิจกรรม</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -162,7 +144,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/DEVFINAL/picture/bsru3.jpg" class="card-img-top" alt="...">
+                    <img src="bsru3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">หัวข้อกิจกรรม</h5>
                         <p class="card-text">This iead-in rst to show that equal height action.</p>
@@ -182,25 +164,25 @@
         </div>
         <div class="service-item">
             <a href="services.html">
-                <img src="/DEVFINAL/picture//hos.png" alt="Health Services">
+                <img src="picture/hos.png" alt="Health Services">
             </a>
             <p>บริการสุขภาพ</p>
         </div>
         <div class="service-item">
             <a href="barrowbag.html">
-                <img src="/DEVFINAL/picture/hos1.png" alt="Consultation Services">
+                <img src="picture/hos1.png" alt="Consultation Services">
             </a>
             <p>การออกรณัยาบอกสถานที่</p>
         </div>
         <div class="service-item">
             <a href="resthos.html">
-                <img src="/DEVFINAL/picture/bed.png" alt="Inpatient Services">
+                <img src="picture/bed.png" alt="Inpatient Services">
             </a>
             <p>การนอนพักที่ห้องพยาบาล</p>
         </div>
         <div class="service-item">
             <a href="healthcheck.html">
-                <img src="/DEVFINAL/picture/report.jpg" alt="Medical Check-up">
+                <img src="picture/report.jpg" alt="Medical Check-up">
             </a>
             <p>บริการตรวจสุขภาพโดยแพทย์</p>
         </div>
@@ -243,7 +225,7 @@
             <div class="knowledge-content">
                 <div class="knowledge-item">
                     <a href="link_to_knowledge1.html">
-                        <img src="/DEVFINAL/picture/news.jpg" alt="รูป">
+                        <img src="news.jpg" alt="รูป">
                         <div class="knowledge-details">
                             <h3>หัวข้อของคลังความรู้ 1</h3>
                             <p>รายละเอียดกิจกรรมอย่างย่อ</p>
@@ -252,7 +234,7 @@
                 </div>
                 <div class="knowledge-item">
                     <a href="link_to_knowledge2.html">
-                        <img src="/DEVFINAL/picture/banner.jpg" alt="รูป">
+                        <img src="banner.jpg" alt="รูป">
                         <div class="knowledge-details">
                             <h3>หัวข้อของคลังความรู้ 2</h3>
                             <p>รายละเอียดกิจกรรมอย่างย่อ</p>
@@ -262,6 +244,7 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="cookie-banner">
           <div>
@@ -328,9 +311,8 @@
             <p>© 2024 สํานักกิจการนักศึกษา</p>
         </div>
     </footer>
-    <script src="/DEVFINAL/Javascript/trans.js""></script>
-    <script src="/DEVFINAL/Javascript/before.js"></script>
-    <script src="/DEVFINAL/Javascript/mode.js"></script>
+    <script src="before.js"></script>
+    <script src="mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
