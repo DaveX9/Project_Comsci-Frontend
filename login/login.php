@@ -75,21 +75,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <div class="header-content">
             <div class="logo">
-                <img src="/picture/logo-sa.png" alt="Public Health"/>
+                <img src="/DEVFINAL/picture/logo-sa.png" alt="Public Health"/>
                 <h4>Public Health <br> งานอนามัยและสุขภาพ</h4> 
             </div>
             <div>
                 <div class="unilogo">
-                    <img src="picture/newunilogo.png" alt="BSRU Logo"/>
+                    <img src="/DEVFINAL/picture/newunilogo.png" alt="BSRU Logo"/>
                 </div>
             </div>
             <div class="language-switch">
                 <a href="#">
-                    <img src="thai.jpg" alt="TH Flag" width="20" height="15"> TH
+                    <img src="/DEVFINAL/picture/thai.jpg" alt="TH Flag" width="20" height="15"> TH
                 </a> 
                 | 
                 <a href="#">
-                    <img src="uk.png" alt="EN Flag" width="20" height="15"> EN
+                    <img src="/DEVFINAL/picture/uk.png" alt="EN Flag" width="20" height="15"> EN
                 </a>
             </div>
         </div>
@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หน้าแรก</a>
+                            <a class="nav-link" href="/DevFinal/beforelogin/home.html">หน้าแรก</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -120,10 +120,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 บริการ
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
-                                <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
-                                <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
-                                <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
+                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/services.html">บริการสุขภาพ</a></li>
+                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/healthcheck.html">บริการตรวจสุขภาพโดยแพทย์</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -141,7 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <form class="d-flex search-container">
                         <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-secondary" type="submit">Search</button>
-                        <a href="login.html" class="login-link">เข้าสู่ระบบ</a>
+                        <a href="login.php" class="login-link">เข้าสู่ระบบ</a>
                     </form>
                 </div>
             </div>
@@ -156,11 +156,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <!-- Form starts -->
                 <form action="login.php" method="POST" class="form">
                     <div class="input-container">
-                        <img src="user.png" alt="User Icon" class="icon">
+                        <img src="/DEVFINAL/picture/user.png" alt="User Icon" class="icon">
                         <input type="text" name="username" placeholder="ช่องกรอก Username" class="username" required>
                     </div>
                     <div class="input-container">
-                        <img src="lock.png" alt="Lock Icon" class="icon">
+                        <img src="/DEVFINAL/picture/lock.png" alt="Lock Icon" class="icon">
                         <input type="password" name="password" placeholder="ช่องกรอก Password" class="password" required>
                     </div>
                     <button class="btn" type="submit">submit</button>
@@ -180,6 +180,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
         </main>
     </section>
+    <footer id="footer">
+        <div class="container d-flex justify-content-between">
+            <div class="footer-left">
+                <p class="address">
+                    9 อาคาร 12 ชั้น 1<br>
+                    มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา<br>
+                    1061 ซอยอิสรภาพ15 แขวงหิรัญรูจี เขตธนบุรี กรุงเทพมหานคร 10600<br>
+                    Tel: 02-473-7000 ต่อ 1306-1307<br>
+                    Email: sa@bsru.ac.th
+                </p>
+            </div>
+            <div class="footer-right">
+                <p class="hours">
+                    วันจันทร์ - วันศุกร์ 8:30 น. - 16:30 น.<br>
+                </p>
+                <a href="https://maps.app.goo.gl/tLUq95XMB4FpuC8Z9" class="map-link">แผนที่ google map</a><br>
+                <a href="#" class="room-link">ห้องพยาบาล</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 สํานักกิจการนักศึกษา</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
