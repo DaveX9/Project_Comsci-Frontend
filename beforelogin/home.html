@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <title>Header Design</title>
+</head>
+<body>
+    <header>
+        <div class="header-topbar">
+            <a href="https://www.bsru.ac.th/">Bansomdejchaopraya Rajabhat University</a>
+            <button id="theme-toggle" class="theme-toggle">
+                🌙 Dark Mode
+            </button>
+            <div class="unilogo">
+                <img src="unilogo.png" alt="BSRU Logo">
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="logo">
+                <img src="/picture/logo-sa.png" alt="Public Health"/>
+                <h4>Public Health <br> งานอนามัยและสุขภาพ</h4> 
+            </div>
+            <div class="language-switch">
+                <a href="#">
+                    <img src="thai.jpg" alt="TH Flag" width="20" height="15"> TH
+                </a> 
+                | 
+                <a href="#">
+                    <img src="uk.png" alt="EN Flag" width="20" height="15"> EN
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            บริการ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
+                            <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                            <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                            <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">คลังความรู้</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-container">
+                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    <a href="login.html" class="login-link">เข้าสู่ระบบ</a>
+                </form>
+                
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="carousel mt-5 pt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bsru.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="bsru1.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="bsru3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> 
+    <section class="news">
+        <div class="news-header">
+            <h2>ข่าวสาร/กิจกรรม</h2>
+            <a href="activities.html" class="news-link">ข่าวสารทั้งหมด</a>
+        </div>
+        <div class="news-container row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bsru.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">หัวข้อกิจกรรม</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">2567/01/01</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bsru1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">หัวข้อกิจกรรม</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">2567/05/01</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="bsru3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">หัวข้อกิจกรรม</h5>
+                        <p class="card-text">This iead-in rst to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">2567/04/05</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="services-section">
+        <div>
+            <h2>บริการต่างๆ</h2>
+        </div>
+        <div class="service-item">
+            <a href="services.html">
+                <img src="picture/Health services.png" alt="Health Services">
+            </a>
+            <p>บริการสุขภาพ</p>
+        </div>
+        <div class="service-item">
+            <a href="barrowbag.html">
+                <img src="picture/Nurse bag.png" alt="Consultation Services">
+            </a>
+            <p>การออกรณัยาบอกสถานที่</p>
+        </div>
+        <div class="service-item">
+            <a href="resthos.html">
+                <img src="picture/sleepbed.png" alt="Inpatient Services">
+            </a>
+            <p>การนอนพักที่ห้องพยาบาล</p>
+        </div>
+        <div class="service-item">
+            <a href="healthcheck.html">
+                <img src="picture/healthcheck.png" alt="Medical Check-up">
+            </a>
+            <p>บริการตรวจสุขภาพโดยแพทย์</p>
+        </div>
+    </section>
+    
+
+    <section class="main-container">
+        <div class="faq-section">
+            <div class="faq-header">
+                <h2>FAQ</h2>
+                <a href="link_to_all_faq.html">faq ทั้งหมด ></a>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <a href="link_to_faq1.html">
+                        <h3>What are the clinic's operating hours?</h3>
+                        <p>Our clinic is open from Monday to Friday, 8:00 AM to 6:00 PM, and on Saturday from 8:00 AM to 1:00 PM. We are closed on Sundays and public holidays.</p>
+                    </a>
+                </div>
+                <div class="faq-item">
+                    <a href="link_to_faq2.html">
+                        <h3>Do I need an appointment to see a doctor?</h3>
+                        <p>While walk-ins are welcome, we recommend scheduling an appointment to ensure you receive timely care. You can book an appointment online or by calling our reception desk.</p>
+                    </a>
+                </div>
+                <div class="faq-item">
+                    <a href="link_to_faq3.html">
+                        <h3>What services does the clinic provide?</h3>
+                        <p>Our clinic offers a wide range of services including general consultations, vaccinations, health screenings, laboratory tests, and minor surgical procedures.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="knowledge-section">
+            <div class="knowledge-header">
+                <h2>คลังความรู้</h2>
+                <a href="link_to_all_knowledge.html">คลังความรู้ทั้งหมด ></a>
+            </div>
+            <div class="knowledge-content">
+                <div class="knowledge-item">
+                    <a href="link_to_knowledge1.html">
+                        <img src="news.jpg" alt="รูป">
+                        <div class="knowledge-details">
+                            <h3>หัวข้อของคลังความรู้ 1</h3>
+                            <p>รายละเอียดกิจกรรมอย่างย่อ</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="knowledge-item">
+                    <a href="link_to_knowledge2.html">
+                        <img src="banner.jpg" alt="รูป">
+                        <div class="knowledge-details">
+                            <h3>หัวข้อของคลังความรู้ 2</h3>
+                            <p>รายละเอียดกิจกรรมอย่างย่อ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cookie-banner">
+          <div>
+            <p>เว็บไซต์นี้ใช้คุกกี้ เราใช้คุกกี้เพื่อเพิ่มประสิทธิภาพ และประสบการณ์ที่ดีในการใช้งานเว็บไซต์ คุณสามารถเลือกตั้งค่าความยินยอมการใช้คุกกี้ได้โดยคลิก "การตั้งค่าคุกกี้" <a href="#" id="openModal">การตั้งค่าคุกกี้</a></p>
+          </div>
+          <div class="cookie-buttons">
+            <button class="cookie-settings" id="openModalButton">การตั้งค่าคุกกี้</button>
+            <button class="cookie-accept" id="acceptCookiesButton">ยอมรับทั้งหมด</button>
+          </div>
+        </div>
+        
+        <div class="modal" id="cookieModal">
+          <div class="modal-header">
+            <h2>การตั้งค่าความเป็นส่วนตัว</h2>
+            <button class="modal-button-secondary" id="closeModalButton">ยอมรับทั้งหมด</button>
+          </div>
+          <div class="cookie-options">
+            <div class="cookie-option">
+              <h3>คุกกี้พื้นฐานที่จำเป็น</h3>
+              <p>คุกกี้พื้นฐานที่จำเป็น เพื่อช่วยให้การทำงานหลักของเว็บไซต์ใช้งานได้ รวมถึงการเข้าถึงพื้นที่ที่ปลอดภัยต่าง ๆ ของเว็บไซต์ หากไม่มีคุกกี้นี้เว็บไซต์จะไม่สามารถทำงานได้อย่างเหมาะสม และจะใช้งานได้โดยการตั้งค่าเริ่มต้นโดยไม่สามารถปิดการใช้งานได้ รายละเอียดคุกกี้</p>
+              <label class="toggle-switch">
+                <input type="checkbox" checked disabled>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="cookie-option">
+              <h3>คุกกี้ในส่วนวิเคราะห์</h3>
+              <p>คุกกี้ในส่วนวิเคราะห์ จะช่วยให้เว็บไซต์เข้าใจรูปแบบการใช้งานของผู้ใช้งานและจะช่วยปรับปรุงประสบการณ์การใช้งาน โดยการเก็บรวบรวมข้อมูลและรายงานผลการใช้งานของผู้ใช้งาน</p>
+              <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-buttons">
+            <button class="modal-button-secondary" id="closeModal">ยกเลิก</button>
+            <button class="modal-button" id="saveSettings">ยืนยันตัวเลือกของฉัน</button>
+          </div>
+        </div>
+      </section>
+    
+    
+
+    <footer id="footer">
+        <div class="container d-flex justify-content-between">
+            <div class="footer-left">
+                <p class="address">
+                    9 อาคาร 12 ชั้น 1<br>
+                    มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา<br>
+                    1061 ซอยอิสรภาพ15 แขวงหิรัญรูจี เขตธนบุรี กรุงเทพมหานคร 10600<br>
+                    Tel: 02-473-7000 ต่อ 1306-1307<br>
+                    Email: sa@bsru.ac.th
+                </p>
+            </div>
+            <div class="footer-right">
+                <p class="hours">
+                    วันจันทร์ - วันศุกร์ 8:30 น. - 16:30 น.<br>
+                </p>
+                <a href="https://maps.app.goo.gl/tLUq95XMB4FpuC8Z9" class="map-link">แผนที่ google map</a><br>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>2024 © Bansomdejchaopraya Rajabhat University All right reserved.</p>
+        </div>
+    </footer>
+    <script src="before.js"></script>
+    <script src="mode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

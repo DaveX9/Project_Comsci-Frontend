@@ -27,6 +27,11 @@
                 <img src="/picture/logo-sa.png" alt="Public Health"/>
                 <h4>Public Health <br> งานอนามัยและสุขภาพ</h4> 
             </div>
+            <div>
+                <div class="unilogo">
+                    <img src="picture/newunilogo.png" alt="BSRU Logo"/>
+                </div>
+            </div>
             <div class="language-switch">
                 <a href="#">
                     <img src="thai.jpg" alt="TH Flag" width="20" height="15"> TH
@@ -39,37 +44,43 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-light mt-3">
             <div class="container-fluid">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">หน้าแรก</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
-                    <li class="nav-item">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            บริการ
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
-                            <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
-                            <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
-                            <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">คลังความรู้</a>
-                    </li>
-                </ul>
-                <form class="d-flex search-container">
-                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">Search</button>
-                    <a href="login.html" class="login-link">เข้าสู่ระบบ</a>
-                </form>
-                
+                <!-- Hamburger menu button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                บริการ
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
+                                <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                                <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                                <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">คลังความรู้</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex search-container">
+                        <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        <a href="login.php" class="login-link">เข้าสู่ระบบ</a>
+                    </form>
+                </div>
             </div>
         </nav>
+        
     </header>
     
     
@@ -148,40 +159,41 @@
     <hr>
 
     <section class="services-section">
-        <div>
+        <div class="services">
             <h2>บริการต่างๆ</h2>
         </div>
         <div class="service-item">
             <a href="services.html">
-                <img src="hos.jpg" alt="Health Services">
+                <img src="picture/hos.png" alt="Health Services">
             </a>
             <p>บริการสุขภาพ</p>
         </div>
         <div class="service-item">
             <a href="barrowbag.html">
-                <img src="hoss.jpg" alt="Consultation Services">
+                <img src="picture/hos1.png" alt="Consultation Services">
             </a>
             <p>การออกรณัยาบอกสถานที่</p>
         </div>
         <div class="service-item">
             <a href="resthos.html">
-                <img src="bed.jpg" alt="Inpatient Services">
+                <img src="picture/bed.png" alt="Inpatient Services">
             </a>
             <p>การนอนพักที่ห้องพยาบาล</p>
         </div>
         <div class="service-item">
             <a href="healthcheck.html">
-                <img src="report.jpg" alt="Medical Check-up">
+                <img src="picture/report.jpg" alt="Medical Check-up">
             </a>
             <p>บริการตรวจสุขภาพโดยแพทย์</p>
         </div>
     </section>
+    <hr>
 
     <section class="main-container">
         <div class="faq-section">
             <div class="faq-header">
                 <h2>FAQ</h2>
-                <a href="link_to_all_faq.html">faq ทั้งหมด ></a>
+                <a href="link_to_faq.html" class="faq-link"> faq ทั้งหมด</a>
             </div>
             <div class="faq-content">
                 <div class="faq-item">
@@ -208,7 +220,7 @@
         <div class="knowledge-section">
             <div class="knowledge-header">
                 <h2>คลังความรู้</h2>
-                <a href="link_to_all_knowledge.html">คลังความรู้ทั้งหมด ></a>
+                <a href="link_to_all_knowledge.html" class="knowledge-link">คลังความรู้ทั้งหมด </a>
             </div>
             <div class="knowledge-content">
                 <div class="knowledge-item">

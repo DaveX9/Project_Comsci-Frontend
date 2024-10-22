@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="services.css">
+    <title>Header Design</title>
+</head>
+<body>
+    <header class="bg-white p-3 fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="brand-container d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Logo" class="logo-img">
+                </a>
+                <div class="brand-text">
+                    <div>งานอนามัยและสุขภาพ</div>
+                    <div>Public Health</div>
+                </div>
+            </div>
+            <div class="header-right d-flex align-items-center">
+                <div class="brand-text text-center me-3">
+                    <div>สํานักกิจการนักศึกษา</div>
+                    <div>Office of Student Affairs</div>
+                    <div>มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา</div>
+                    <div>Office of Student Affairs Bansomdejchaopraya Rajabhat University</div>
+                </div>
+                <div class="dropdown language-selector">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#"><img src="thai.jpg" alt="Thai" title="Thai" width="30" height="20"> Thai</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="uk.png" alt="Eng" title="English" width="30" height="20"> English</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="china.png" alt="Chinese" title="Chinese" width="30" height="20"> Chinese</a></li>
+                    </ul>
+                </div>
+                <div class="font-size-controls d-flex align-items-center ms-3">
+                    <button id="decrease-size" class="btn btn-light me-2">A-</button>
+                    <button id="default-size" class="btn btn-light me-2">A</button>
+                    <button id="increase-size" class="btn btn-light">A+</button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="before.html">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            บริการ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
+                            <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                            <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                            <li><a class="dropdown-item" href="healthcheck.html">บริการตรวจสุขภาพโดยแพทย์</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">คลังความรู้</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-container">
+                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    <a href="login.html" class="login-link">เข้าสู่ระบบ</a>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-section pt-5 mt-5">
+        <section class="header-image text-center">
+            <img src="bsru.jpg" class="img-fluid">
+        </section>
+        <nav class="breadcrumb mt-3">
+            <a href="before.html">หน้าแรก</a> &gt;<a href="services.html">บริการ</a>&gt;<span>บริการสุขภาพ</span>
+        </nav>
+        <div class="container">
+            <section class="news-section mt-5">
+                <h2 class="mb-4">บริการสุขภาพ</h2>
+                <div class="service">
+                    <h4>ระเบียบการบริการสุขภาพ</h4>
+                    <p>
+                        1.กรุณาแสดงบัตรนักศึกษาก่อนรับบริการ<br>
+                        2.บอกอาการและรับยาจากเจ้าหน้าที่ หรือพยาบาลเท่านั้น<br>
+                        3.เขียนชื่อ-นามสกุล และกรอกข้อมูลให้ครบ ลงในแฟ้มบันทึกข้อมูลการใช้ยาทุกครั้งก่อนรับบริการ
+                    </p>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+   
+
+
+
+
+
+    <footer id="footer">
+        <div class="container d-flex justify-content-between">
+            <div class="footer-left">
+                <p class="address">
+                    9 อาคาร 12 ชั้น 1<br>
+                    มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา<br>
+                    1061 ซอยอิสรภาพ15 แขวงหิรัญรูจี เขตธนบุรี กรุงเทพมหานคร 10600<br>
+                    Tel: 02-473-7000 ต่อ 1306-1307<br>
+                    Email: sa@bsru.ac.th
+                </p>
+            </div>
+            <div class="footer-right">
+                <p class="hours">
+                    วันจันทร์ - วันศุกร์ 8:30 น. - 16:30 น.<br>
+                </p>
+                <a href="https://maps.app.goo.gl/tLUq95XMB4FpuC8Z9" class="map-link">แผนที่ google map</a><br>
+                <a href="#" class="room-link">ห้องพยาบาล</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 สํานักกิจการนักศึกษา</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
