@@ -7,7 +7,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="stylesheet" href="/DEVFINAL/CSS/barrowbag.css">
+    <link rel="stylesheet" href="/DEVFINAL/CSS/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    </head>
     <title>Header Design</title>
 </head>
 <body>
@@ -29,11 +33,11 @@
                 </div>
             </div>
             <div class="language-switch">
-                <a href="#">
+                <a href="#" onclick="setLanguage('th')">
                     <img src="/DEVFINAL/picture/thai.jpg" alt="TH Flag" width="20" height="15"> TH
                 </a> 
                 | 
-                <a href="#">
+                <a href="#" onclick="setLanguage('en')">
                     <img src="/DEVFINAL/picture/uk.png" alt="EN Flag" width="20" height="15"> EN
                 </a>
             </div>
@@ -61,7 +65,7 @@
                                 <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
                                 <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
                                 <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
-                                <li><a class="dropdown-item" href="healthcheck.html">บริการตรวจสุขภาพโดยแพทย์</a></li>
+                                <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -78,36 +82,37 @@
         </nav>
         
     </header>
-    
-    
 
-    <main class="content-section pt-5 mt-5">
-        <section class="header-image text-center">
-            <img src="/DEVFINAL/picture/bsru.jpg" class="img-fluid">
-        </section>
+    <main>
         <nav class="breadcrumb mt-3">
-            <a href="before.html">หน้าแรก</a> &gt;<a href="services.html">บริการ</a>&gt;<span>การขอกระเป๋ายาออกนอกสถานที่</span>
+            <a href="/DEVFINAL/beforelogin/home.html">หน้าแรก</a> &gt; <span>ข่าวสารและกิจกรรมทั้งหมด</span>
         </nav>
-        <div class="container">
-            <section class="news-section mt-5">
-                <h2 class="mb-4">การขอกระเป๋ายาออกนอกสถานที่</h2>
-                <div class="service">
-                    <h4>ระเบียบการขอกระเป๋ายาออกนอกสถานที่</h4>
-                    <p>
-                        1.รับบันทึกข้อความเพื่อขออนุญาตใช้กระเป๋ายาจากเจ้าหน้าที่ห้องพยาบาล<br>
-                        2.ส่งบันทึกข้อความก่อนล่วงหน้า 3 วัน เพื่อจัดเตรียมกระเป๋ายา<br>
-                        3.มารับกระเป๋ายาตามกำหนดเวลาที่นัดเฉพาะในเวลาทำการเท่านั้น
-                    </p>
+    
+        <section class="content">
+            <!-- Add Image Here -->
+            <img src="/DEVFINAL/picture/bsru1.jpg" alt="เกี่ยวกับห้องพยาบาล" class="top-image">
+            <div class="location-section">
+                <h3>ตำแหน่งของห้องพยาบาล</h3>
+                
+                <div class="location-info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.7712227796583!2d100.48760857508988!3d13.73229618665756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298fe8dcd0d13%3A0x8166225c8081ce3a!2sBansomdejchaopraya%20Rajabhat%20University!5e0!3m2!1sen!2sth!4v1730882788389!5m2!1sen!2sth" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="location-description">
+                        <p><strong>ห้องพยาบาล บริการประกันภัย ห้องปฐมพยาบาล</strong></p>
+                        <p>ห้องพยาบาลเป็นหน่วยงานที่ให้บริการสุขภาพอย่างมีประสิทธิภาพและพอเพียงดังต่อไปนี้</p>
+                        <ul>
+                            <li>การป้องกัน</li>
+                            <li>การรักษาพยาบาลเบื้องต้นและการเผยแพร่ความรู้เกี่ยวกับสุขภาพ สำหรับนักศึกษา คณาจารย์ และบุคลากรของมหาวิทยาลัย</li>
+                            <li>งานบริการและการให้คำปรึกษาทางด้านสุขภาพ</li>
+                        </ul>
+                        <p>เปิดทำการตรวจรักษา ผู้บริการประกันสุขภาพ ทุกวันพฤหัสบดีช่วงเวลา 10.30 - 13.00 น.</p>
+                        <p>เปิดให้บริการสุขภาพ จันทร์ - ศุกร์ เวลา 08.30 - 19.00 น. และวันเสาร์ - อาทิตย์ เวลา 09.00 - 16.00 น.</p>
+                    </div>
                 </div>
-            </section>
-            
-        </div>
+            </div>
+        </section>
     </main>
-   
-
-
-
-
+    
 
     <footer id="footer">
         <div class="container d-flex justify-content-between">
@@ -132,7 +137,9 @@
             <p>© 2024 สํานักกิจการนักศึกษา</p>
         </div>
     </footer>
-    
+    <script src="cookie.js"></script>
+    <script src="trans.js"></script>
+    <script src="mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

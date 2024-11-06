@@ -33,11 +33,11 @@
                 </div>
             </div>
             <div class="language-switch">
-                <a href="#">
+                <a href="#" onclick="setLanguage('th')">
                     <img src="/DEVFINAL/picture/thai.jpg" alt="TH Flag" width="20" height="15"> TH
                 </a> 
                 | 
-                <a href="#">
+                <a href="#" onclick="setLanguage('en')">
                     <img src="/DEVFINAL/picture/uk.png" alt="EN Flag" width="20" height="15"> EN
                 </a>
             </div>
@@ -52,20 +52,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="/DevFinal/beforelogin/home.html">หน้าแรก</a>
+                            <a class="nav-link" href="#">หน้าแรก</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">เกี่ยวกับห้องพยาบาล</a>
+                            <a class="nav-link" href="/DEVFINAL/beforelogin/about.html">เกี่ยวกับห้องพยาบาล</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 บริการ
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="/DEVFINAL/beforelogin/servicesDropdown">
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/services.html">บริการสุขภาพ</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
-                                <li><a class="dropdown-item" href="/DEVFINAL/beforelogin/healthcheck.html">บริการตรวจสุขภาพโดยแพทย์</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                <li><a class="dropdown-item" href="services.html">บริการสุขภาพ</a></li>
+                                <li><a class="dropdown-item" href="barrowbag.html">การขอกระเป๋ายานอกสถานที่</a></li>
+                                <li><a class="dropdown-item" href="resthos.html">การนอนพักที่ห้องพยาบาล</a></li>
+                                <li><a class="dropdown-item" href="#">บริการตรวจสุขภาพโดยแพทย์</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -163,25 +163,25 @@
             <h2>บริการต่างๆ</h2>
         </div>
         <div class="service-item">
-            <a href="/DEVFINAL/beforelogin/services.html">
+            <a href="services.html">
                 <img src="/DEVFINAL/picture/hos.png" alt="Health Services">
             </a>
             <p>บริการสุขภาพ</p>
         </div>
         <div class="service-item">
-            <a href="/DEVFINAL/beforelogin/barrowbag.html">
+            <a href="barrowbag.html">
                 <img src="/DEVFINAL/picture/hos1.png" alt="Consultation Services">
             </a>
             <p>การออกรณัยาบอกสถานที่</p>
         </div>
         <div class="service-item">
-            <a href="/DEVFINAL/beforelogin/resthos.html">
+            <a href="resthos.html">
                 <img src="/DEVFINAL/picture/bed.png" alt="Inpatient Services">
             </a>
             <p>การนอนพักที่ห้องพยาบาล</p>
         </div>
         <div class="service-item">
-            <a href="/DEVFINAL/beforelogin/healthcheck.html">
+            <a href="healthcheck.html">
                 <img src="/DEVFINAL/picture/report.jpg" alt="Medical Check-up">
             </a>
             <p>บริการตรวจสุขภาพโดยแพทย์</p>
@@ -225,7 +225,7 @@
             <div class="knowledge-content">
                 <div class="knowledge-item">
                     <a href="link_to_knowledge1.html">
-                        <img src="/DEVFINAL/news.jpg" alt="รูป">
+                        <img src="/DEVFINAL/picture/news.jpg" alt="รูป">
                         <div class="knowledge-details">
                             <h3>หัวข้อของคลังความรู้ 1</h3>
                             <p>รายละเอียดกิจกรรมอย่างย่อ</p>
@@ -234,7 +234,7 @@
                 </div>
                 <div class="knowledge-item">
                     <a href="link_to_knowledge2.html">
-                        <img src="/DEVFINAL/banner.jpg" alt="รูป">
+                        <img src="/DEVFINAL/picture/banner.jpg" alt="รูป">
                         <div class="knowledge-details">
                             <h3>หัวข้อของคลังความรู้ 2</h3>
                             <p>รายละเอียดกิจกรรมอย่างย่อ</p>
@@ -311,8 +311,8 @@
             <p>© 2024 สํานักกิจการนักศึกษา</p>
         </div>
     </footer>
-    <script src="zoom.js"></script>
-    <script src="before.js"></script>
+    <script src="cookie.js"></script>
+    <script src="trans.js"></script>
     <script src="mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

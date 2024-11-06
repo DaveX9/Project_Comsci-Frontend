@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <a class="nav-link" href="/DevFinal/beforelogin/home.html">หน้าแรก</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="/DEVFINAL/beforelogin/about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 เกี่ยวกับห้องพยาบาล
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">

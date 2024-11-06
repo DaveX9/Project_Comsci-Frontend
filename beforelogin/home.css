@@ -30,8 +30,11 @@ header {
   z-index: 1000;
   margin: 0;
   border-bottom: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
-  /* Remove 'position: fixed;' from here, as it's controlled by JavaScript */
 }
 
 .header-topbar {
@@ -296,26 +299,31 @@ body.dark-mode {
 /* carousel */
 
 .carousel {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
 .carousel-item img { 
-  width: 300px;
+  width: 100px;
   height: auto;
   margin: auto;
-  padding: 20px;
+  padding: 70px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for all images */
 }
 
+/* Zoom effect for all images on hover */
+.carousel-item img:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+
 /* News Section Styles */
-.news {
+.news { 
   text-align: center;
   margin: 20px 0;
   font-size: 18px;
   font-family: "Noto Sans Thai", sans-serif;
   box-sizing: border-box;
   padding: 20px;
-  /* background-color: #f8f9fa; Light grey background */
-  /* border: 1px solid #dee2e6; /*Border around the section */
   border-radius: 5px;
 }
 
@@ -324,41 +332,39 @@ body.dark-mode {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 3px solid var(--bg-color) ;
-  margin-bottom: 20px; /* Add margin to create space between header and content */
+  border-bottom: 3px solid var(--bg-color);
+  margin-bottom: 20px;
 }
 
 .news-header h2 {
   font-size: 1em;
   text-align: left;
-  /* margin-left: 70px;  adj hearder h2 left*/
-  text-decoration: none;
   color: #ffffff;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   padding: 8px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for button effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .news-header .news-link {
   font-size: 1em;
   text-decoration: none;
   color: #ffffff;
-  background-color:var(--font-color);
+  background-color: var(--font-color);
   padding: 8px 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for button effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .news-container {
   display: flex;
-  justify-content: space-between; /* Distribute space between columns */
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0; 
+  margin: 0;
 }
 
 .news-container .col {
-  flex: 1 1 30%; /* Allow columns to resize dynamically */
+  flex: 1 1 30%;
   max-width: 30%;
   padding: 10px;
 }
@@ -366,11 +372,21 @@ body.dark-mode {
 .card {
   margin: 20px auto;
   max-width: 300px;
+  transition: transform 0.3s ease; /* Smooth transition for card zoom effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slight zoom effect for the entire card */
 }
 
 .card-img-top {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease; /* Smooth transition for image zoom effect */
+}
+
+.card-img-top:hover {
+  transform: scale(1.1); /* Slight zoom-in effect for image */
 }
 
 .card-body {
@@ -381,60 +397,67 @@ body.dark-mode {
   text-align: right;
 }
 
+
+
 /* .services-section */
 
-.services-section {
-font-family: "Noto Sans Thai", sans-serif ;
-font-size: 18px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: flex-start;
-text-align: center;
-margin: 20px 0;
-gap: 0;
-box-sizing: border-box;
-padding: 20px;
-border-radius: 5px;
-}
-.services{
-width: 100%;
-margin-bottom: 20px;
-/* padding-left: 100px; */
-padding: 10px;
-border-bottom: 3px solid var(--bg-color) ;
-
+.services-section { 
+  font-family: "Noto Sans Thai", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  margin: 20px 0;
+  gap: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.services h2{
-width: 130px;
-text-align: left;
-color: var(--font2);
-font-size: 1em;
-background-color: var(--bg-color);
-padding: 8px 16px;
-border-radius: 4px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for button effect */
+.services {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 3px solid var(--bg-color);
+}
+
+.services h2 {
+  width: 130px;
+  text-align: left;
+  color: var(--font2);
+  font-size: 1em;
+  background-color: var(--bg-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .service-item {
-width: 25%;
-margin: 0;  /* Remove margins */
-padding: 10px;
-align-items: center;
+  width: 25%;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
 
+.service-item:hover {
+  transform: scale(1.1); /* Zoom in the entire item on hover */
 }
 
 .service-item img {
-width: 50px;
-height: auto;
-margin-bottom: 10px;
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .service-item p {
-font-size: 16px;
-color: #000;
+  font-size: 16px;
+  color: #000;
 }
+
+
 
 /* FAQ & Knowledge */
 
